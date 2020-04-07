@@ -1,0 +1,19 @@
+$colors: (
+  primary: #1f72ff,
+  dark-grey: #222222,
+  text-color: rgba(0, 0, 0, 0.6),
+  black: rgba(0, 0, 0, 0.87),
+);
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}

@@ -9,28 +9,31 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Error from "./pages/Error";
 // global components
+import Layout from "./components/Layout";
 
 const App = () => {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/gallery">
-          <Gallery />
-        </Route>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/contact">
-          <Contact />
-        </Route>
-        <Route path="*">
-          <Error />
-        </Route>
-      </Switch>
-    </Router>
+    <Layout>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/gallery">
+            <Gallery />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="*">
+            <Error />
+          </Route>
+        </Switch>
+      </Router>
+    </Layout>
   );
 };
 
