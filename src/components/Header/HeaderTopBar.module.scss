@@ -1,0 +1,74 @@
+$colors: (
+  grey-color: #4b505d,
+  primary-color: #0063dd,
+);
+
+$tablet: 840px;
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+@mixin tablet {
+  @media (max-width: #{$tablet}) {
+    @content;
+  }
+}
+
+.headerTopWrap {
+  background-color: color(grey-color);
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.siteHeaderTop {
+  padding: 7px 0 8px 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+
+  .level {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      padding-left: 0.5rem;
+      transition: color 0.2s ease-in;
+
+      &:hover {
+        color: color(primary-color);
+      }
+    }
+
+    .topbarInfo {
+      font-size: 11.6px;
+      line-height: 17.4px;
+      list-style: none;
+      display: flex;
+
+      li {
+        padding-right: 1rem;
+      }
+    }
+
+    .social {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      list-style: none;
+      font-size: 16px;
+      line-height: 17.4px;
+
+      li {
+        padding-right: 1rem;
+      }
+    }
+  }
+}
