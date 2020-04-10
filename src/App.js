@@ -13,8 +13,8 @@ import Layout from "./components/Layout";
 
 const App = () => {
   return (
-    <Layout>
-      <Router>
+    <Router>
+      <Layout>
         <Switch>
           <Route exact path="/">
             <Home />
@@ -32,8 +32,8 @@ const App = () => {
             <Error />
           </Route>
         </Switch>
-      </Router>
-    </Layout>
+      </Layout>
+    </Router>
   );
 };
 

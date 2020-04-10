@@ -1,8 +1,30 @@
+$root: (
+  fontSize: 16px,
+  lineHeight: 1.5,
+);
 $colors: (
   primary: #1f72ff,
   dark-grey: #222222,
   text-color: rgba(0, 0, 0, 0.6),
   black: rgba(0, 0, 0, 0.87),
+);
+$h1: (
+  fontSize: 3.815rem,
+);
+$h2: (
+  fontSize: 3.052rem,
+);
+$h3: (
+  fontSize: 2.441rem,
+);
+$h4: (
+  fontSize: 1.953rem,
+);
+$h5: (
+  fontSize: 1.563rem,
+);
+$h6: (
+  fontSize: 1.25rem,
 );
 
 * {
@@ -16,11 +38,14 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  line-height: map-get($root, lineHeight);
 }
 
 /* Header styles */
-.hero--banner {
-  background-color: #dedede;
-  text-align: center;
-  padding: 2rem;
+.h1 {
+  font-size: map-get($h1, fontSize);
+}
+
+.h5 {
+  font-size: map-get($h5, fontSize);
 }

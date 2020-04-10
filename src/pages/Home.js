@@ -1,15 +1,17 @@
 import React from "react";
+import Hero from "../components/Hero";
+import { Link } from "react-router-dom";
 
 import "../flexbox/flexboxgrid.css";
 
 const Home = () => {
   return (
     <div>
-      <div className="hero--banner">
-        <h1>Welcome to Velis Video Productions</h1>
-        <h5>We provide the best service for any event</h5>
-        <button>book us now</button>
-      </div>
+      <Hero>
+        <Link to="/" className="bt bt-primary">
+          book us now
+        </Link>
+      </Hero>
       <div className="container">
         <h1>Home</h1>
       </div>
