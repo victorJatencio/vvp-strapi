@@ -1,21 +1,19 @@
 import React from "react";
 import Hero from "../components/Hero";
-import { Link } from "react-router-dom";
+import Cta from "../components/Cta";
 
 import "../flexbox/flexboxgrid.css";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Hero>
-        <Link to="/" className="bt bt-primary">
-          book us now
-        </Link>
+        <Cta className="primary">book us now</Cta>
       </Hero>
       <div className="container">
         <h1>Home</h1>
       </div>
-    </div>
+    </>
   );
 };
 

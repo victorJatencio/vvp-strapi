@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="about--section section">
+    <div className="container">
       <h1 className="section--title">About page</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi optio
@@ -10,7 +10,7 @@ const About = () => {
         nisi dolorem ratione in animi. Praesentium quo rerum necessitatibus
         esse?
       </p>
-    </section>
+    </div>
   );
 };
 

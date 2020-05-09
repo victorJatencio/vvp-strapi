@@ -1,6 +1,6 @@
 import React from "react";
 
-import TestVideo from "./test-video.mp4";
+import TestVideo from "../../assets/test-video.mp4";
 import classes from "./BackgroundVideo.module.scss";
 
 const BackgroundVideo = ({ children }) => {
