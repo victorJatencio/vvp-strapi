@@ -16,7 +16,8 @@ $h2: (
   fontSize: 3.052rem,
 );
 $h3: (
-  fontSize: 2.441rem,
+  fontSize: 2.175rem,
+  marginBottom: 1.5rem,
 );
 $h4: (
   fontSize: 1.953rem,
@@ -50,10 +51,37 @@ body {
 .h1 {
   font-size: map-get($h1, fontSize);
 }
+.h3 {
+  font-size: map-get($h3, fontSize);
+  margin-bottom: map-get($h3, marginBottom);
+}
 
 .h5 {
   font-size: map-get($h5, fontSize);
   margin-bottom: 3.5rem;
+}
+
+.running-headers {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #bbb;
+}
+
+.header-highlight {
+  color: map-get($colors, primary);
+}
+
+/* p styles */
+.text-block {
+  font-weight: 300;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+/* spacings */
+.padding-right {
+  padding-right: 1.5rem;
 }
 /* Header Style */
 .header {
@@ -89,6 +117,18 @@ body {
           }
         }
       }
+    }
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: map-get($colors, dark-grey);
+  padding: 2rem;
+
+  .logo {
+    img {
+      width: 173px;
     }
   }
 }

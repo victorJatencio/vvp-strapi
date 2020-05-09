@@ -15,10 +15,10 @@ const BtnComponent = styled(Link)`
   }
 `;
 
-const Cta = ({ bkg, color, className, children }) => {
+const Cta = ({ to, bkg, color, className, children }) => {
   return (
     <>
-      <BtnComponent to="/" className={className} color={color} bkg={bkg}>
+      <BtnComponent to={to} className={className} color={color} bkg={bkg}>
         {children}
       </BtnComponent>
     </>
