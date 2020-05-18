@@ -9,6 +9,7 @@ const BtnComponent = styled(Link)`
   background-color: ${(props) => props.primary || "#1f72ff"};
   color: ${(props) => props.color || "#fff"};
   transition: all 0.2s ease-in;
+  display: inline-block;
 
   &:hover {
     background-color: ${(props) => props.bkg || "#1f94ff"};

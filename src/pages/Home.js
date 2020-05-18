@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "../components/Hero";
 import Cta from "../components/Cta";
+import QuickServices from "../components/services/QuickServices";
 import { MdLocalMovies, MdCamera } from "react-icons/md";
 import styled from "styled-components";
 
@@ -73,6 +74,9 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </section>
+      <section>
+        <QuickServices />
       </section>
     </>
   );

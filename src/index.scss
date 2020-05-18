@@ -121,6 +121,13 @@ body {
   }
 }
 
+// Home services
+.grid-block {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* Footer */
 .footer {
   background-color: map-get($colors, dark-grey);
